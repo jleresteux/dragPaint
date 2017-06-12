@@ -1,0 +1,16 @@
+body{
+    /*background-image: url("../img/bckgd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;*/
+}
+#grill{
+
+}
+.cover {
+    width: 25%;
+    margin: 0 auto;
+    position: relative;
+    cursor: url(../img/move_rot.gif),move;
+    border: black thick solid ;
+}

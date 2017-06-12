@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS/index.css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" >
+
+    <!--div id="grill" ng-mouseup="removeFlag($index)" ng-mousemove="dragImage($event, $index)"-->
+        <img class="cover" draggable="false" ng-src="{{ image.cover }}" ng-mousedown="setFlag($event, $index)"
+         ng-dblclick="rotate($index)" ng-repeat="image in images" ng-mouseup="removeFlag($index)" ng-mousemove="dragImage($event, $index)"
+         style="top: {{ image.y }}px; left: {{ image.x }}px; transform: rotate({{ image.rdegree }}deg)">
+
+    <!--/div-->
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/Controller/MainController.js"></script>
+
+</body>
+</html>
