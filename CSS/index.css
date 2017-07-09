@@ -1,5 +1,36 @@
+body{  }
+.title{
+    text-align: center;
+}
+.description{
+    display: inline-block;
+    text-align: left;
+}
+.go-button{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    border: #cc6600 solid thick;
+    border-radius: 40%;
+
+    background-color: #f90;
+
+    height:7em;
+    width: 7.5em;
+
+    text-decoration: none !important;
+}
+.go-button>p{
+    font-size: xx-large;
+    color: #333333;
+}.go-button:hover>p{
+    color: white;
+ }
+
+
 .cover {
-    width: 25%;
+    width: 20%;
     margin: 0 auto;
     position: relative;
     cursor: url(../img/move_rot.gif),move;
