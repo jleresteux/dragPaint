@@ -2,13 +2,15 @@
 <html>
 <head>
     <link href="CSS/index.css" rel="stylesheet" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl" >
-        <img class="cover" draggable="false" ng-src="{{ image.cover }}" ng-mousedown="setFlag($event, $index)"
-         ng-dblclick="rotate($index)" ng-repeat="image in images" ng-mouseup="removeFlag($index)" ng-mousemove="dragImage($event, $index)"
-         style="top: {{ image.y }}px; left: {{ image.x }}px; transform: rotate({{ image.rdegree }}deg)">
+<body ng-app="myApp" >
+
+<div ng-view></div>
 
 <!-- Modules -->
 <script src="js/app.js"></script>

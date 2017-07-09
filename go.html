@@ -1,0 +1,5 @@
+
+        <img class="cover" draggable="false" ng-src="{{ image.cover }}" ng-mousedown="setFlag($event, $index)"
+         ng-dblclick="rotate($index)" ng-repeat="image in images" ng-mouseup="removeFlag($index)" ng-mousemove="dragImage($event, $index)"
+         style="top: {{ image.y }}px; left: {{ image.x }}px; transform: rotate({{ image.rdegree }}deg);"/>
+
