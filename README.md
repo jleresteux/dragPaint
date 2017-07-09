@@ -9,8 +9,9 @@ Work around AngularJS with ngmousedown, ngmouseup, ngmousemove to drag a picture
   mouseup removes the flag.
 Bind 90deg right rotation to double-click event.
 
+Title and instruction landing page. Using routing, acces to app 
+
 Ameliorations: 
-  adding a pop up (modal?) with instructions;
   adding touch events (ngtouch) for mobile version;
   (?) implementing boundaries;
   (?) adding a grill to stick to.
