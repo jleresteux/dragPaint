@@ -1,5 +1,5 @@
 /**
- * Created by JLeresteux on 6/4/2017.
+ * Created by Winnie on 6/4/2017.
  */
 
 app.controller('myCtrl', function($scope) {
@@ -32,7 +32,11 @@ app.controller('myCtrl', function($scope) {
         $scope.images[index].rdegree+=90;
     };
 
+
+
+
     $scope.dragImage = function(event, index) {
+
         if ($scope.images[index].mouseIsDown) {
 
             $scope.images[index].y = event.screenY - $scope.images[index].y_old;
@@ -52,4 +56,5 @@ app.controller('myCtrl', function($scope) {
     $scope.removeFlag = function(index){
         $scope.images[index].mouseIsDown = false;
     }
+
 });
